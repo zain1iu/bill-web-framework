@@ -1,0 +1,70 @@
+<html>
+<head lang="zh">
+    <meta charset="UTF-8">
+    <title ng-bind-html="site_title"></title>
+    <base href="/"></base>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-orientation" content="portrait"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="keywords" content="">
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!--begin build-->
+    <script src="static/js/lib/common/jquery.min.js"></script>
+    <!--end build-->
+
+    <script>
+        /*全局配置属性*/
+        var G = {
+            api_host: 'localhost:8080',
+            path: {
+                root: './',
+                mod: './src/module',
+                view: './static/view',
+                img: './static/images'
+            },
+            site: {name: ''},//全局用户信息
+            site_name: '',//默认标题
+            load_version: 'build-0.0.1'
+        }, F = {}, M = {};
+    </script>
+    <script src="static/js/lib/common/angular.min.js"></script>
+    <script src="static/js/lib/common/angular-route.min.js"></script>
+    <script src="static/js/lib/common/angular-sanitize.min.js"></script>
+    <script src="static/js/lib/common/ng-infinite-scroll.min.js"></script>
+    <script src="static/js/lib/common/swiper.min.js"></script>
+    <script src="static/js/lib/common/angular-swiper.js"></script>
+    <script src="static/js/lib/common/angular-commFn.js"></script>
+    <script src="static/js/lib/common/script.js"></script>
+    <script src="static/js/lib/common/superagent.js"></script>
+    <script src="static/js/lib/common/superagent-jsonp.js"></script>
+    <script src="static/js/lib/common/sea.js"></script>
+    <script src="src/load.js"></script>
+</head>
+<body>
+<!--页面头部-->
+<div class="view-top">
+
+</div>
+<!--页面左边栏-->
+<div class="view-left">
+
+</div>
+<!--页面主视图-->
+<div ng-view>
+
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        /*页面渲染之前初始化处理逻辑*/
+    });
+</script>
